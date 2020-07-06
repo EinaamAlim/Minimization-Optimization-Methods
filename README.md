@@ -1,6 +1,5 @@
 # Minimization-Optimization-Methods
-Author: Mohammad Einaam Alim, Raphael Barata de Oliveira
-Various methods for optimization
+Authors: Mohammad Einaam Alim, Raphael Barata de Oliveira
 
 ## Description
 The problem is finding the minimum of the function f(x)=x^4+2xy^2+y^2-2x+5, using the Broyden-Fletcher-Goldfarb-Shanno (BFGS) Method with an initial value (x_0,y_0)=(1,2)^T. The iteration stops when the estimated error value |f(x_(n+1))-f(x_n)|<0.00005. The same tolerance is used for the remaining 4 subproblems in #2 and #3 which each respectively use Conjugate Gradient Method, Steepest Descent Method, SQP Method, and Reduced Gradient Method.

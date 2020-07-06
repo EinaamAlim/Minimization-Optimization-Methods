@@ -7,6 +7,7 @@ The problem is finding the minimum of the function f(x)=x^4+2xy^2+y^2-2x+5, usin
 
 ## Discussion
 Each program initializes the initial guess and function/function-handle, epsilon tolerance, and initial variables. Each uses a loop with a break-out condition for when the estimated error value is less than the specified epsilon tolerance parameter, which shows the precise minimizer is found. <br>
+
 The program implements BFGS Method by first initializing (x_0,y_0)=(1,2)^T. Then it proceeds to a loop that iteratively obtains the gradient of f(x_0) and the search direction s_n=B_k ∇f(x_n) and then determines x_(n+1)=x_n+αx_(n+1) s_n. The Sherman-Morrison Formula is used to determine each iteration’s respective B_k and stores previous values for the next iteration’s use. Alpha is set to an ad hoc value of 1.0, as we are not optimizing it here. <br>
 
 For 2A, the program implements Conjugate Gradient Method by first initializing (x_0,y_0)=(-1.2,1.0)^T and f(x)=100(y-x)^2+(1-x)^2. The program determines the first search direction  s_0=-∇f(x_0,y_0) and optimizes alpha. For following iterations, β was obtained and used to determine the search direction s_(n+1)=-∇f(x_n,y_n)+βs_n and x_(n+1)=x_n+αs_n. <br>
